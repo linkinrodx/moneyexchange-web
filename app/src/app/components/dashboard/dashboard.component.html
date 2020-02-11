@@ -1,0 +1,64 @@
+<div class="container-fluid">
+    <div class="row" style="padding: 10px 50px; background-color: #838383;">
+        <div class="col-6">
+            <span style="color: #444444; font-weight: bold;">Money Exchange</span>
+        </div>
+        <div class="col-6 text-right">
+            <a href="javascript:void(0)" style="color: #444444;" (click)="logout()">
+                <span>Sign out <i class="fa fa-sign-out"></i></span>
+            </a>
+            
+        </div>
+    </div>
+
+    <div class="row" style="padding-top: 20px;">
+        <div class="col-12 text-center">
+            <!-- <h2>Money Exchange</h2> -->
+            <img src="https://www.investopedia.com/thmb/M-we6mdLUgezNP-XsAoli0Lf070=/2121x1414/filters:fill(auto,1)/GettyImages-974812152-705d0a6d517947fb8946a3c887d528be.jpg" alt="Money Exchange" class="img-thumbnail" style="width: 200px; border-radius: 50%">
+        </div>
+    </div>
+    <div class="row" style="padding: 20px;">
+        <div class="col-12 text-center">
+            <button class="btn btn-light" style="margin: 0 10px; width: 100px;" disabled>$</button>
+            <button class="btn btn-light" style="margin: 0 10px; width: 100px;" disabled>€</button>
+            <button class="btn btn-light" style="margin: 0 10px; width: 100px;" disabled>¥</button>
+            <button class="btn btn-light" style="margin: 0 10px; width: 100px;" disabled>£</button>
+        </div>
+    </div>
+    <form [formGroup]="formExchange">
+        <div class="row" style="padding: 0 200px; background-color: #838383; padding-top: 50px; padding-bottom: 50px;">
+            <div class="col-12 text-center" style="padding: 10px 0;
+            color: white; font-weight: bold; height: 50px;">
+                <span>{{minuteString}} : {{timeString}}</span>
+            </div>
+            <div class="col-6">
+                <input formControlName="startCurrency"
+                placeholder="USD"
+                class="form-control"
+                (keypress)="keyPress($event)"
+                (blur)="transformAmountUSD($event)"
+                maxlength="15"
+                >
+            </div>
+            <div class="col-6">
+                <input formControlName="targetCurrency"
+                placeholder="EU"
+                class="form-control"
+                >
+            </div>
+            <div class="col-12 text-center" style="margin-top: 30px;">
+                <button class="btn btn-info" (click)="calculate()" style="width: 250px; height: 50px;">
+                    CALCULATE
+                </button>
+            </div>
+        </div>
+    </form>
+    <div class="row" style="height: 100px;">
+
+    </div>
+    <div class="row footer text-right" style="padding: 10px 0; background-color: #838383;">
+        <div class="col-12">
+            <span style="color: #444444;">Developed by <a target="_blank" href="https://github.com/linkinrodx" style="color: #1d1d1d; font-weight: bold;">Rodrigo Saraya</a></span>
+        </div>
+    </div>
+</div>

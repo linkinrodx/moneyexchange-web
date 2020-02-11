@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~ngx-toasta/styles/style-bootstrap.css';
+
+#toasta.toasta-position-top-right {
+    top: 20px;
+    right: 20px;
+}
+
+#toasta .toast.toasta-theme-bootstrap {
+    font-size: 0.9em;
+}
+
+#toasta .toast.toasta-theme-bootstrap .toast-text .toast-title {
+    font-size: 1em;
+}
+
+#toasta .toast-text .toast-msg {
+    max-width: 1000px;
+    max-height: 800px;
+    display: inline-block;
+    overflow: auto;
+}
