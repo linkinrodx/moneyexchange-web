@@ -1,0 +1,79 @@
+
+$backgroundColor: #838383;
+$fontColor: #444444;
+
+.dashboard{
+
+    .divLogin{
+        padding: 10px 50px; 
+        background-color: $backgroundColor;
+
+        .title{
+            color: $fontColor; 
+            font-weight: bold;
+        }
+
+        .logout{
+            color: $fontColor; 
+        }
+    }
+
+    .divLogo{
+        padding-top: 20px;
+
+        img{
+            width: 200px; 
+            border-radius: 50%
+        }
+    }
+
+    .divCurrencyButton{
+        padding: 20px;
+
+        .currencyButton{
+            margin: 0 10px; 
+            width: 100px;
+        }
+    }
+
+    .divCurrencyExchange{
+        padding: 0 200px; 
+        background-color: #838383; 
+        padding-top: 50px; 
+        padding-bottom: 50px;
+
+        .divTimer{
+            padding: 10px 0;
+            color: white; 
+            font-weight: bold; 
+            height: 50px;
+        }
+
+        .divCalculate{
+            margin-top: 30px;
+
+            button{
+                width: 250px; 
+                height: 50px;
+            }
+        }
+    }
+
+    .space{
+        height: 100px;
+    }
+
+    .footer{
+        padding: 10px 0; 
+        background-color: $backgroundColor;
+
+        span{
+            color: $fontColor;
+        }
+
+        a{
+            color: #1d1d1d; 
+            font-weight: bold;
+        }
+    }
+}

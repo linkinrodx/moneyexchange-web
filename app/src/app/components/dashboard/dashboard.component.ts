@@ -43,7 +43,7 @@ export class DashboardComponent implements OnInit {
     if (!this.formExchange.valid) return;
 
     var request = new ExchangeRequest();
-    request.UserId = 1;
+    request.UserId = this.securityService.getUsuario().userId;
     request.StartCurrencyId = AppConstants.CurrencyTypes.USD;
     request.TargetCurrencyId = AppConstants.CurrencyTypes.EUR;
     request.StartValue = Number.parseFloat(this.currencyInputChanged(this.formExchange.controls["startCurrency"].value));

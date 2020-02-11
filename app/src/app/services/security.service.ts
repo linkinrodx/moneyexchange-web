@@ -25,7 +25,7 @@ export class SecurityService {
   }
 
   getUsuario(){
-    var user;
+    let user : UserResponse;
     if (JSON.parse(localStorage.getItem("user"))) {
       user = new UserResponse(JSON.parse(localStorage.getItem("user")));
     }

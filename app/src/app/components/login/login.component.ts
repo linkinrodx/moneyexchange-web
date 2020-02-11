@@ -50,7 +50,7 @@ export class LoginComponent implements OnInit {
     this.security.login(request).subscribe();
   }
 
-  onkeypress(event){
+  onkeypress(event : any){
     if (event.which == 13 || event.keyCode == 13) {
       this.login();
     }

@@ -15,6 +15,7 @@ import { CurrencyPipe} from '@angular/common';
 
 import { ToastaModule } from 'ngx-toasta';
 import { AlertService } from './services/alert.service';
+import { CurrencyService } from './services/currency.service';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { AlertService } from './services/alert.service';
   ],
   providers: [
     SecurityService,
+    CurrencyService,
     CurrencyPipe,
     AlertService
   ],
