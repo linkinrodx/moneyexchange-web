@@ -1,6 +1,7 @@
 
 $backgroundColor: #838383;
 $fontColor: #444444;
+$linkColor: #1d1d1d;
 
 .dashboard{
 
@@ -72,7 +73,7 @@ $fontColor: #444444;
         }
 
         a{
-            color: #1d1d1d; 
+            color: $linkColor; 
             font-weight: bold;
         }
     }
